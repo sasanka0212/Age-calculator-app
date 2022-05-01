@@ -1,8 +1,10 @@
 # import all functions from the tkinter
-from tkinter import *
+import tkinter as tk
 
 # import messagebox class from tkinter
+from tkinter import *
 from tkinter import messagebox
+from tkinter import ttk
 
 # Function for clearing the
 # contents of all text entry boxes
@@ -93,7 +95,7 @@ def calculateAge():
 # Driver Code
 if __name__ == "__main__":
     # Create a GUI window
-    gui = Tk()
+    gui = tk.Tk()
     # Set the background colour of GUI window
     gui.configure(background="white")
 
@@ -104,43 +106,43 @@ if __name__ == "__main__":
     gui.geometry("525x260")
 
     # Create a Date Of Birth : label
-    dob = Label(gui, text="Date Of Birth", bg="yellow")
+    dob = ttk.Label(gui, text="Date Of Birth", background="yellow")
 
     # Create a Given Date : label
-    givenDate = Label(gui, text="Given Date", bg="yellow")
+    givenDate = ttk.Label(gui, text="Given Date", background="yellow")
 
     # Create a Day : label
-    day = Label(gui, text="Day", bg="white")
+    day = ttk.Label(gui, text="Day", background="white")
 
     # Create a Month : label
-    month = Label(gui, text="Month", bg="white")
+    month = ttk.Label(gui, text="Month", background="white")
 
     # Create a Year : label
-    year = Label(gui, text="Year", bg="white")
+    year = ttk.Label(gui, text="Year", background="white")
 
     # Create a Given Day : label
-    givenDay = Label(gui, text="Given Day", bg="white")
+    givenDay = ttk.Label(gui, text="Given Day", background="white")
 
     # Create a Given Month : label
-    givenMonth = Label(gui, text="Given Month", bg="white")
+    givenMonth = ttk.Label(gui, text="Given Month", background="white")
 
     # Create a Given Year : label
-    givenYear = Label(gui, text="Given Year", bg="white")
+    givenYear = ttk.Label(gui, text="Given Year", background="white")
 
     # Create a Years : label
-    rsltYear = Label(gui, text="Years", bg="white")
+    rsltYear = Label(gui, text="Years", background="white")
 
     # Create a Months : label
-    rsltMonth = Label(gui, text="Months", bg="white")
+    rsltMonth = Label(gui, text="Months", background="white")
 
     # Create a Days : label
-    rsltDay = Label(gui, text="Days", bg="white")
+    rsltDay = Label(gui, text="Days", background="white")
 
     # Create a Resultant Age Button and attached to calculateAge function
-    resultantAge = Button(gui, text="Resultant Age", fg="white", bg="green", command=calculateAge)
+    resultantAge = Button(gui, text="Resultant Age", fg="white", background="green", command=calculateAge)
 
     # Create a Clear All Button and attached to clearAll function
-    clearAllEntry = Button(gui, text="Clear All", fg="white", bg="Red", command=clearAll)
+    clearAllEntry = Button(gui, text="Clear All", fg="white", background="Red", command=clearAll)
 
     # Create a text entry box for filling or typing the information.
     dayField = Entry(gui)
